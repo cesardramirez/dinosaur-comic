@@ -1,0 +1,25 @@
+body {
+	background-color: #FDFDFD;
+	text-align: center;
+}
+
+figure {
+	background: url('../images/load.gif') no-repeat center;
+	max-width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+img {
+	transition: .5s;
+	opacity: 0;
+	width: 100%;
+	position: relative;
+	left: -40%;
+}
+
+/* Este estilo debe definirse inmediatamente después de img. */
+img.b-loaded {
+	opacity: 1;
+	left: 0;
+}
